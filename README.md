@@ -3,7 +3,7 @@
 
 # "Expensify," is a full-stack web application using MongoDB, Express.js, React, and Node.js to track daily, monthly, and yearly income and expenses.
 
-#key Features are: 
+# key Features are: 
 
 # 1) Responsive and Modern UI Design:
 
