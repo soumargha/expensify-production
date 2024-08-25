@@ -14,7 +14,7 @@ const Register = () => {
     try {
       setLoading(true);
       console.log(values); // Log the values to see what is being sent
-      await axios.post('http://localhost:8080/api/v1/users/register', values); // Corrected URL to match proxy setup
+      await axios.post('https://expensify-production.vercel.app/api/v1/users/register', values); // Corrected URL to match proxy setup
       message.success('Registration successful');
       setLoading(false);
       navigate('/login');
