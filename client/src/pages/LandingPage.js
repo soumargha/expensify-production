@@ -9,8 +9,8 @@ const LandingPage = () => {
   
 
   return (
-    <><div className='jumbotron '>
-      <section className="parallax bg-blend-multiply bg-slate-400 ">
+    <><div className='jumbotron bg-teal-400 h-[100vh]'>
+      <section className="bg-blend-multiply bg-teal-400 ">
         <div className="px-4  mx-auto max-w-screen-xl  text-center py-24 lg:py-56">
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Welcome to Expensify</h1>
           <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">The personalized Expense management system to track all your daily expenses and incomes.</p>
@@ -27,7 +27,7 @@ const LandingPage = () => {
     </div>
     
     <div>
-    <section className="parallax py-12 md:py-24 bg-blend-multiply bg-slate-400">
+    <section className="py-12 md:py-24 bg-blend-multiply bg-teal-400">
     <div class="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 relative mt-[-6rem] ">
         <div class="shadow rounded-xl">
             <div class="grid overflow-hidden text-white shadow-xl md:grid-cols-2 bg-emerald-600 rounded-lg px-20 py-16">

@@ -35,7 +35,7 @@ const Login = () => {
   return (
     <>
       <LandingPage />
-      <div id="login-section" className="parallax min-h-screen bg-blend-multiply bg-slate-400 text-gray-900 flex justify-center items-center ">
+      <div id="login-section" className="min-h-screen bg-blend-multiply bg-lime-400 text-gray-900 flex justify-center items-center pb-20 pt-32">
         <div className="mt-2  max-w-screen-xl m-0 sm:m-10  bg-white shadow sm:rounded-lg flex justify-center flex-1 rounded-lg">
           <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
             <div className="text-center">
