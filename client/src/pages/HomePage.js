@@ -72,7 +72,7 @@ const HomePage = () => {
     try {
       const user = JSON.parse(localStorage.getItem("user"));
       setLoading(true);
-      const res = await axios.post("/transactions/get-transactions", {
+      const res = await axios.post("https://expensify-production.vercel.app/api/v1/transactions/get-transactions", {
         userid: user._id,
         frequency,
         selectedDate: selectedDate.length
@@ -104,7 +104,7 @@ const HomePage = () => {
   const handleDelete = async (record) => {
     try {
       setLoading(true);
-      await axios.post("/transactions/delete-transaction", {
+      await axios.post("https://expensify-production.vercel.app/api/v1/transactions/delete-transaction", {
         transactionId: record._id,
       });
       setLoading(false);
@@ -123,7 +123,7 @@ const HomePage = () => {
       const user = JSON.parse(localStorage.getItem("user"));
       setLoading(true);
       if (editable) {
-        await axios.post("/transactions/edit-transaction", {
+        await axios.post("https://expensify-production.vercel.app/api/v1/transactions/edit-transaction", {
           payload: {
             ...values,
             userId: user._id,
@@ -133,7 +133,7 @@ const HomePage = () => {
         setLoading(false);
         message.success("Transaction Updated successfully");
       } else {
-        await axios.post("/transactions/add-transaction", {
+        await axios.post("https://expensify-production.vercel.app/api/v1/transactions/add-transaction", {
           ...values,
           userid: user._id,
         });
