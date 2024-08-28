@@ -3,9 +3,12 @@ import { Form, Input, Button, message } from 'antd';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Spinner from '../components/Spinner';
-import LandingPage from './LandingPage';
-import Footer from '../components/Footer'
-import mobile from '../images/mobile.png'
+import LandingpageNew from './LandingpageNew';
+import Footer from '../components/Footer';
+import mobile from '../images/mobile.png';
+import { Stars } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import Floatingphone from './Floatingphone';
 
 const Login = () => {
   const [loading, setLoading] = useState(false);
@@ -34,9 +37,19 @@ const Login = () => {
 
   return (
     <>
-      <LandingPage />
-      <div id="login-section" className="min-h-screen bg-blend-multiply bg-lime-400 text-gray-900 flex justify-center items-center pb-20 pt-32">
-        <div className="mt-2  max-w-screen-xl m-0 sm:m-10  bg-white shadow sm:rounded-lg flex justify-center flex-1 rounded-lg">
+      <LandingpageNew />
+     <Floatingphone/>
+
+      <div id="login-section" className="relative min-h-screen bg-blend-multiply bg-black text-white flex justify-center items-center pb-20 pt-32">
+        {/* Stars Effect */}
+        <div className="absolute inset-0 z-0">
+          <Canvas>
+            <Stars radius={50} count={2500} factor={4} fade speed={2} />
+          </Canvas>
+        </div>
+
+        {/* Login Form */}
+        <div className="relative z-10 mt-2 max-w-screen-xl m-0 sm:m-10  shadow sm:rounded-lg flex justify-center flex-1 rounded-lg">
           <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
             <div className="text-center">
               <h1 className="text-3xl font-bold mb-6">Login to your account</h1>
@@ -84,19 +97,19 @@ const Login = () => {
             </Form>
           </div>
 
-          <div className="flex-1 bg-emerald-600 text-center hidden lg:flex rounded-tr-lg rounded-br-lg justify-center items-center">
-  <img
-    className="rounded-lg mt-4 mb-4 shadow-xl"
-    style={{ maxWidth: '40rem', maxHeight: '44rem' }}
-    src={mobile}
-    alt="Cute cat with blue eyes"
-  />
-</div>
-
+          <div className="flex-1 bg-tranparent text-center hidden lg:flex rounded-lg rounded-br-lg justify-center items-center">
+            <img
+              className="rounded-lg mt-4 mb-4 shadow-xl"
+              style={{ maxWidth: '40rem', maxHeight: '44rem' }}
+              src={mobile}
+              alt="Mobile Illustration"
+            />
+          </div>
         </div>
 
         {loading && <Spinner />}
       </div>
+
       <Footer />
     </>
   );
