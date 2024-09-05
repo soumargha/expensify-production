@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 import mobile from '../images/mobile.png';
 import { Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import Floatingphone from './Floatingphone';
+import { VanishList } from './VanishList';
 
 const Login = () => {
   const [loading, setLoading] = useState(false);
@@ -38,7 +38,7 @@ const Login = () => {
   return (
     <>
       <LandingpageNew />
-     <Floatingphone/>
+     <VanishList/>
 
       <div id="login-section" className="relative min-h-screen bg-blend-multiply bg-black text-white flex justify-center items-center pb-20 pt-32">
         {/* Stars Effect */}

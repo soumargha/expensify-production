@@ -88,10 +88,10 @@ const AuroraHero = () => {
             </span>
 
             <h2 class="mt-2 font-semibold text-base sm:text-lg text-white">
-                For Developers
+                Beautiful and smooth UI
             </h2>
-            <p class="sm:mt-1 block text-sm sm:text-base text-gray-300"> Prototype ideas
-                online, without depending on your local environment.
+            <p class="sm:mt-1 block text-sm sm:text-base text-gray-300"> See analytics of your data
+                
             </p>
         </div>
 
@@ -104,10 +104,10 @@ const AuroraHero = () => {
                 </div>
             </span>
             <h2 class="mt-2 font-semibold text-base sm:text-lg text-white">
-                Content creators
+                Mobile optimised
             </h2>
-            <p class="sm:mt-1 block text-sm sm:text-base text-gray-300"> Deliver
-                high-quality, engaging blogs, articles, and video tutorials to your audience.
+            <p class="sm:mt-1 block text-sm sm:text-base text-gray-300"> 
+                Fully responsive design.
             </p>
         </div>
 
@@ -122,10 +122,8 @@ const AuroraHero = () => {
             </span>
 
             <h2 class="mt-2 font-semibold text-base sm:text-lg text-white">
-                Educators
-                teaching PHP </h2>
-            <p class="sm:mt-1 block text-sm sm:text-base text-gray-300"> Easily create and
-                share coding assignments and projects with your students
+                Easily understandable </h2>
+            <p class="sm:mt-1 block text-sm sm:text-base text-gray-300"> The simple design and functions makes Expensify makes it easily understandable
             </p>
         </div>
 
@@ -138,10 +136,8 @@ const AuroraHero = () => {
                </div>
             </span>
             <h2 class="mt-2 font-semibold text-base sm:text-lg text-white">
-                Open source
-                maintainers </h2>
-            <p class="sm:mt-1 block text-sm sm:text-base text-gray-300">For issue
-                reproduction while letting your users try your work without installing it
+                Get reminders of your spending </h2>
+            <p class="sm:mt-1 block text-sm sm:text-base text-gray-300">Create new categories and add whatever you like!
             </p>
         </div>
     </div>
