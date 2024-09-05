@@ -45,18 +45,24 @@ export const VanishList = () => {
   };
 
   return (
+    
     <section
       className="relative min-h-screen bg-zinc-950 py-24 overflow-hidden"
       style={{
-        backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke-width='2' stroke='%2318181b'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e")`,
+        
       }}
     >
+      
+<h1 class="text-center mt-[-4rem] mb-20 text-3xl font-extrabold text-gray-300  md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Have a glimpse</span> of what's going on.</h1>
+
+
       {/* Stars Background */}
       <div className="absolute inset-0 z-0">
         <Canvas>
           <Stars radius={50} count={2500} factor={4} fade speed={2} />
         </Canvas>
       </div>
+      
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -72,7 +78,7 @@ export const VanishList = () => {
           </div>
 
           {/* Right Side - Hero Section */}
-          <div className="hidden lg:flex justify-center items-center bg-zinc-900 rounded-lg p-6">
+          <div className="hidden lg:flex justify-center items-center bg-zinc-900 rounded-lg p-6 mt-8">
             <div className="text-center">
               <img src={bars} alt="Placeholder" className="rounded-lg" />
               <h2 className="mt-4 text-white text-2xl font-medium">

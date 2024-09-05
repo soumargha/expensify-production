@@ -10,6 +10,7 @@ import { Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { VanishList } from './VanishList';
 
+
 const Login = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -40,13 +41,17 @@ const Login = () => {
       <LandingpageNew />
      <VanishList/>
 
-      <div id="login-section" className="relative min-h-screen bg-blend-multiply bg-black text-white flex justify-center items-center pb-20 pt-32">
+     
+
+      <div id="login-section" className="relative min-h-screen bg-blend-multiply bg-zinc-950 text-white flex justify-center items-center pb-20 pt-32">
         {/* Stars Effect */}
         <div className="absolute inset-0 z-0">
           <Canvas>
             <Stars radius={50} count={2500} factor={4} fade speed={2} />
           </Canvas>
         </div>
+
+
 
         {/* Login Form */}
         <div className="relative z-10 mt-2 max-w-screen-xl m-0 sm:m-10  shadow sm:rounded-lg flex justify-center flex-1 rounded-lg">
@@ -109,8 +114,10 @@ const Login = () => {
 
         {loading && <Spinner />}
       </div>
-
+     
       <Footer />
+
+      
     </>
   );
 };
